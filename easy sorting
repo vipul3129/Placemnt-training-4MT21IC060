@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int arr[] = {10,20,7,9,5,3,11,8};
+    int size = sizeof(arr)/sizeof(arr[0]);
+    for (int i =1;i<=size-1;i++)
+        for(int j =0;j<size-i;j++)
+            if(arr[j]>arr[j+1])
+            arr[j] = (arr[j]+arr[j+1])-(arr[j+1]=arr[j]);
+           for(int index=0;index<size;index++)
+            printf("%d ",arr[index]);
+}
