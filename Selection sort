@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int
+main ()
+{
+    int arr[] = {10,20,7,9,5,3,11,8};
+    int size = sizeof(arr)/sizeof(arr[0]);
+    for (int i = 0;i<size-1;i++)
+    {
+    int min_index=i;
+    for (int j =i+1;j<size;j++)
+        if(arr[min_index]>arr[j])
+        min_index =j;
+        if (i !=min_index)
+            arr[i] = (arr[i]+arr[min_index])-(arr[min_index]=arr[i]);
+}
+        for(int index =0;index<size;index++)
+        printf("%d ",arr[index]);
+        
+        return 0;
+}
