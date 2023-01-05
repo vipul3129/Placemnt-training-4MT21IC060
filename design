@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int
+main ()
+{
+  int n;
+  scanf ("%d", &n);
+  for (int r = n; r > 0; r--)
+    {
+      for (int c = 1; c < n - r; c++)
+	printf (" ");
+      for (int c = 1; c <= r; c++)
+	{
+	  printf ("=");
+	}
+      printf ("\n");
+    }
+  for (int r = n; r > 0; r--)
+    {
+      for (int c = 1; c < n - r; c++)
+	printf (" ");
+      for (int c = 1; c <= r; c++)
+	{
+	  printf ("=");
+	}
+      printf ("\n");
+    }
+
+  return 0;
+}
