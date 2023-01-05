@@ -1,0 +1,23 @@
+#include <stdio.h>
+intmain ()
+{
+  float grade;
+  printf ("enter CGPA:\n");
+  scanf ("%f", &grade);
+  if (grade >= 9 && grade < 10)
+    printf ("\"O\"");
+  if (grade >= 8 && grade < 8.99)
+    printf ("\"A\"");
+  if (grade >= 7 && grade < 7.99)
+    printf ("\"B\"");
+  if (grade >= 6 && grade < 6.99)
+    printf ("\"C\"");
+  if (grade > 5 && grade < 5.99)
+    printf ("\"D\"");
+  else if (grade < 5)
+    printf ("\"NO\"");
+  else if (grade < 10)
+    printf ("invalid");
+  else if (grade < 0)
+    return 0;
+}
