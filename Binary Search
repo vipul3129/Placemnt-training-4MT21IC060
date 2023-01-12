@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int lb,ub,mid,search;
+    int arr[]={2,3,4,5,6,7,8,9,10},search_element;
+    int size = sizeof(arr)/sizeof(arr[0]);
+    scanf("%d",&search_element);
+    for(int lb=0,ub=size-1;lb<=ub;){
+        int mid = (lb+ub)/2;
+        if(arr[mid]==search_element){
+            printf("FOund@ %d",mid);
+            return 0;
+        }
+        else if(arr[mid]>search_element)
+                    ub=mid-1;
+        else
+                    lb=mid+1;
+    }
+    printf("not found");
+    return 0;
+}
