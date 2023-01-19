@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+    char UserName[] = "admin";
+scanf("%s",UserName);
+printf("Please enter your password: \n");
+char PassWord[] = "admin";
+scanf("%s",PassWord);
+    if (UserName == "admin") 
+    {
+     if (PassWord == "admin"){
+     printf("You have sucessfully logged in!\n");
+    }
+    }else
+    {
+     printf("The user name or password you entered is invalid.\n please try again");
+    }
+    return 0;
+}
